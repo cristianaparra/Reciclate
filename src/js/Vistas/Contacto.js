@@ -6,7 +6,10 @@ export const Contacto = () => {
             <div className="card body container">
                 <div className="alert alert-success" role="alert">
                     ¡Contáctanos!
-		        </div>
+		        
+                
+                
+                </div>
                 <div className="form-row">
                     <div className="form-group col-md-10 m-auto">
                         <label for="Card#">correo electrónico </label>
