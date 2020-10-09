@@ -1,6 +1,6 @@
 import React from "react";
 
-export const PasoAPaso = () => {
+const PasoAPaso = () => {
 	return (
         <>
         <div className="card body container mt-6">
@@ -25,6 +25,7 @@ export const PasoAPaso = () => {
 
 		</div>
     </>
-    ) },
+	) 
+}
 
     export default PasoAPaso;

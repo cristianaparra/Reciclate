@@ -1,42 +1,39 @@
 import React from 'react';
- 
-class Navbar extends React.Component {
- 
-  render() {
- 
+import { Link } from 'react-router-dom';
+import logo from '../../img/logo.png'
+
+
+const Navbar = () => {
    return (
-    <>
-   <nav className="navbar navbar-expand-md navbar-success fixed-top bg-dark">
- 
-     <a className="navbar-brand" href="#">Reciclate</a>
-     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-     </button>
-     <div className="collapse navbar-collapse" id="navbarCollapse">
-     <ul className="navbar-nav mr-auto">
-         <li className="nav-item active">
-            <a className="nav-link" href="#">Inicio <span className="sr-only">(current)</span></a>
-         </li>
-         <li className="nav-item">
-            <a className="nav-link" href="#">Nosotros</a>
-         </li>
-         <li className="nav-item">
-            <a className="nav-link" href="#">Quiero Recolectar</a>
-         </li>
-         <li className="nav-item">
-            <a className="nav-link" href="#">Quiero Reciclar</a>
-         </li>
-         <li className="nav-item">
-            <a className="nav-link" href="#">Contacto</a>
-         </li>
-     </ul>
-     
-     </div>
- 
- </nav>
- </>
-   )
-},
+      <>
+         <nav className="navbar navbar-expand-md navbar-success sticky-top">
+            <div className="collapse navbar-collapse" id="navbarCollapse">
 
-export default NavBAr
+               <ul className="navbar-nav mr-auto d-flex justify-content-between align-items-center">
+                  <li className="nav-item active">
+                     <Link className="nav-link " href="#!">Inicio <span className="sr-only">(current)</span></Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link className="nav-link" href="#!">Nosotros</Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link className="nav-link" href="#!">Quiero Recolectar</Link>
+                  </li>
+                  <img className='w-25 h-25 ' src={logo} alt="Reciclaje Logo" />
+                  <li className="nav-item">
+                     <Link className="nav-link" href="#!">Quiero Reciclar</Link>
+                  </li>
+                  <li className="nav-item">
+                     <Link className="nav-link" href="#!">Contacto</Link>
+                  </li>
+               </ul>
 
+            </div>
+
+         </nav>
+      </>
+
+   );
+}
+
+export default Navbar;

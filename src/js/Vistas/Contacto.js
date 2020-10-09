@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Contacto = () => {
+const Contacto = () => {
     return (
         <>
             <div className="card body container">
@@ -43,6 +43,6 @@ export const Contacto = () => {
             </div>
         </>
     )
-},
+}
 
 export default Contacto;
