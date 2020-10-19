@@ -6,7 +6,7 @@ import logo from '../../img/logo.png'
 const Navbar = () => {
    return (
       <>
-         <nav className="navbar navbar-expand-md navbar-success sticky-top">
+         <nav className="navbar navbar-expand-md navbar-success sticky-top bg-white">
             <div className="collapse navbar-collapse " id="navbarCollapse">
                
                <ul className="navbar-nav mr-auto d-flex justify-content-between align-items-center">

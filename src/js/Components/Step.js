@@ -3,7 +3,7 @@ import React from 'react';
 const Step = () => {
     return (
         <>
-            <h1>¿Como reciclar? ¡Es fácil!  <i class="fas fa-recycle" /></h1>
+            <h1>¿Como reciclar? ¡Es fácil!  <i className="fas fa-recycle" /></h1>
             <div className="card mb-3">
                 <img src="..." className="card-img-left" alt="..." />
                 <div className="card-body">
