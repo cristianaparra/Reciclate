@@ -3,15 +3,17 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import form from './js/Components/form'
 import Home from './js/Vistas/Home'
+import Ruta from './js/Ruta'
+import Public from './template/public'
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/form' component={form} />
-        <Route exact path='/recolector' />
-        <Route exact path='/usuario' />
+        <Ruta exact path='/' component={Home} layout={Public} />
+        <Ruta exact path='/form' component={form} layout={Public}/>
+        <Ruta exact path='/usuario' component={form} layout={Public}/>
+       
       
       </Switch>
     </Router>
