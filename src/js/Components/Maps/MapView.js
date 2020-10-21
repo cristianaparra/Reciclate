@@ -1,18 +1,30 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css';
+import Markers from './Markers'
 
 
 const MapView = () => {
+    const position = [-33.404920, -70.559165]
     return (
-        <Map className='leaflet-container'
-            center={{ lat: '51.505', lng: '-0.09' }}
-            zoom={13}
+        <Map className=''
+            center={position}
+            zoom={20}
         >
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
             />
+            <Marker position={position}>
+                <Popup><h4>
+                    A pretty CSS3 popup
+                    </h4>
+                    <p>
+                        Easily customizable.
+                    </p>
+                </Popup>
+            </Marker>
         </Map>
     );
 }
